@@ -23,7 +23,7 @@ public class ConnectionFactory {
 	public Connection getConnection() {
 		Connection conn = null;
 		Properties prop = new Properties();
-		String path = "database.properties";
+		String path = "C:\\Users\\SJWL\\Documents\\Eclipse\\project1\\database.properties";
 
 		try {
 			prop.load(new FileReader(path));

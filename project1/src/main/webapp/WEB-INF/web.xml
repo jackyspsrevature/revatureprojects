@@ -1,22 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
   <display-name>project1</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
   <servlet>
     <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.revature.login.LoginServlet</servlet-class>
+    <servlet-class>com.revature.servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Employee</display-name>
+    <servlet-name>Employee</servlet-name>
+    <servlet-class>com.revature.servlet.Employee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Employee</servlet-name>
+    <url-pattern>/Employee</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FM</display-name>
+    <servlet-name>FM</servlet-name>
+    <servlet-class>com.revature.servlet.FM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FM</servlet-name>
+    <url-pattern>/FM</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>loggin</display-name>
+    <servlet-name>loggin</servlet-name>
+    <servlet-class>com.revature.servlet.loggin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loggin</servlet-name>
+    <url-pattern>/loggin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EmployeeAdd</display-name>
+    <servlet-name>EmployeeAdd</servlet-name>
+    <servlet-class>com.revature.servlet.EmployeeAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeAdd</servlet-name>
+    <url-pattern>/EmployeeAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FMApprove</display-name>
+    <servlet-name>FMApprove</servlet-name>
+    <servlet-class>com.revature.servlet.FMApprove</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FMApprove</servlet-name>
+    <url-pattern>/FMApprove</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FMDeny</display-name>
+    <servlet-name>FMDeny</servlet-name>
+    <servlet-class>com.revature.servlet.FMDeny</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FMDeny</servlet-name>
+    <url-pattern>/FMDeny</url-pattern>
   </servlet-mapping>
 </web-app>
